@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+input {
+  margin-bottom: 1.75rem;
+  display: flex;
+}
+div {
+  text-align: center;
+  height: 25px;
+  width: 25px;
+}
+small {
+  font-size: 1.2rem;
+}

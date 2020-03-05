@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex Color Entropy</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hex Color Entropy</h1>
+    <main id="app">
+      <input
+        @change="updateEntropy"
+        v-model="entropy"
+        type="range"
+        min="0"
+        max="60e6"
+      />
+      <small>{{entropy}}</small>
+      <section id="colors">
+        <div v-for="i in 777"></div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
